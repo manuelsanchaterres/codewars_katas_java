@@ -31,9 +31,8 @@ public class CoffeeMachineFactoryTest {
         return listWithArguments.stream();
     }
     @ParameterizedTest
-    @DisplayName("Comprobar Método makeCoffeeMachine, size, constructor y getListCoffeeMachines de CoffeeMachineFactory")
     @MethodSource("testCoffeeMachineFactoryArgumentsProvider")
-    public void testCoffeeMachineFactory(CoffeeMachine[] coffeeMachineList, int expectedListLength) {
+    public void testMakeCoffeeMachine(CoffeeMachine[] coffeeMachineList, int expectedListLength) {
 
         for (int i = 0; i < coffeeMachineList.length; i++) {
             coffeeMachineFactory.makeCoffeeMachine(coffeeMachineList[i]);
@@ -45,6 +44,6 @@ public class CoffeeMachineFactoryTest {
 
         );
         assertEquals(expectedListLength, coffeeMachineFactory.size());
-//        System.out.println(coffeeMachineFactory);
+        System.out.println(coffeeMachineFactory);
     }
 }

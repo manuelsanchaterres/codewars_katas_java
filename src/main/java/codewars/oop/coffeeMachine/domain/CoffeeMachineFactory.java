@@ -32,14 +32,15 @@ public class CoffeeMachineFactory {
 
     }
 
+    public int size(){
+
+        return listCoffeeMachines.size();
+    }
+
     public ArrayList<CoffeeMachine> getListCoffeeMachines(){
 
         return listCoffeeMachines;
     }
 
-    public int size(){
-
-        return listCoffeeMachines.size();
-    }
 
 }
