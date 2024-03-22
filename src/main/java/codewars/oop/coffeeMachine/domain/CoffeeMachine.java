@@ -19,4 +19,9 @@ public class CoffeeMachine implements CoffeeMachineInterface{
     public Coffee makeCoffee(String coffeeType) {
        return new Coffee(coffeeType);
     }
+
+    public String getCoffeeMachineName(){
+
+        return coffeeMachineName;
+    }
 }
