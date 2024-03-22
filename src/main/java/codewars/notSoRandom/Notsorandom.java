@@ -1,5 +1,4 @@
-package notSoRandom;
-
+package codewars.notSoRandom;
 class Notsorandom {
 
     public static void main(String[] args) {

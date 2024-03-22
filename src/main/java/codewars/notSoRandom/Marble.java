@@ -1,4 +1,4 @@
-package notSoRandom;
+package codewars.notSoRandom;
 
 public class Marble {
 
