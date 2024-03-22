@@ -40,10 +40,10 @@ public class CoffeeMachineFactoryTest {
 
         assertAll(
                 () -> assertEquals(expectedListLength, coffeeMachineFactory.size(),"Check expected List Length"),
-                () -> assertEquals(expectedListLength , coffeeMachineFactory.getListCoffeeMachines().size(),"Check getListCoffeeMachines method")
+                () -> assertEquals(expectedListLength , coffeeMachineFactory.getListCoffeeMachines().size(),"Check getListCoffeeMachines method"),
+                () -> assertInstanceOf(CoffeeMachine.class, coffeeMachineFactory.buyCoffeeMachine(), "Check buyCoffeeMachine method by assessing its return data type")
 
         );
-        assertEquals(expectedListLength, coffeeMachineFactory.size());
-        System.out.println(coffeeMachineFactory);
+        System.out.println(coffeeMachineFactory.buyCoffeeMachine());
     }
 }

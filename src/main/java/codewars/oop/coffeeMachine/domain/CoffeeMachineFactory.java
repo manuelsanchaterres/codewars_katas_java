@@ -21,9 +21,8 @@ public class CoffeeMachineFactory {
     }
     public CoffeeMachine buyCoffeeMachine() {
 
-        int randomIndex = (int) Math.floor(Math.random()*(listCoffeeMachines.size()+1));
-
-        return listCoffeeMachines.get(randomIndex);
+        int randomIndex = (int) Math.floor((Math.random()*(listCoffeeMachines.size()-1) + 1));
+        return listCoffeeMachines.size() > 1 ? listCoffeeMachines.get(randomIndex): listCoffeeMachines.getFirst();
     }
 
     public void makeCoffeeMachine(CoffeeMachine coffeeMachine)
