@@ -33,7 +33,7 @@ public class CoffeeMachineFactoryTest {
     @ParameterizedTest
     @DisplayName("Comprobar Método makeCoffeeMachine, size, constructor y getListCoffeeMachines de CoffeeMachineFactory")
     @MethodSource("testCoffeeMachineFactoryArgumentsProvider")
-    public void testMakeCoffeeMachine(CoffeeMachine[] coffeeMachineList, int expectedListLength) {
+    public void testCoffeeMachineFactory(CoffeeMachine[] coffeeMachineList, int expectedListLength) {
 
         for (int i = 0; i < coffeeMachineList.length; i++) {
             coffeeMachineFactory.makeCoffeeMachine(coffeeMachineList[i]);

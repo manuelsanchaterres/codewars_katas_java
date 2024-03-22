@@ -6,8 +6,8 @@ public class Coffee {
     public Coffee (String type){
         this.type = type;
     }
-//    public final String getType() {
-//        return type;
-//    }
+    public final String getType() {
+        return type;
+    }
 
 }

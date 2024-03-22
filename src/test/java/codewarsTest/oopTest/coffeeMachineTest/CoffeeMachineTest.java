@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CoffeeMachineTest {
     @ParameterizedTest
-    @DisplayName("Comprobar Método getCoffeeMachineName y constructor de clase CoffeeMachine")
-    @ValueSource(strings = {"moccamaster", "nespresso", "sage", "seattle", "breville"})
-    public void testMakeCoffeeMachine(String coffeeMachineName) {
+    @DisplayName("Comprobar Método getType y constructor de clase Coffee")
+    @ValueSource(strings = {"cappuccino", "latte", "cortado", "irish", "espresso"})
+    public void testCoffeeMachine(String coffeeMachineName) {
 
         assertEquals(coffeeMachineName, new CoffeeMachine(coffeeMachineName).getCoffeeMachineName(),"Check Coffee Machine object Creation.");
         System.out.println(new CoffeeMachine(coffeeMachineName));
